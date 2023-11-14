@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Ambiry</string>
+    <string name="discover_something">Entdecke was Neues</string>
+    <string name="for_you">Für dich empfohlene Künstler</string>
+    <string name="what_will_you_hear_today">was möchtest du gerne hören?</string>
+    <string name="appSettings">App-Einstellungen</string>
+    <string name="Profile">Profil</string>
+    <string name="playlistforyou">Für dich erstellte Playlisten</string>
+    <string name="soundQuality">Tonqualität einstellen</string>
+
+    <string name="TablayoutPlaylist">Playlisten</string>
+    <string name="TabLayoutSubscription">Abonniert</string>
+
+    <string name="yourPlaylists">Deine Playlisten</string>
+    <string name="followedChannel">Kanäle, denen du folgst</string>
+
+    <string name="browse_everything">Wonach suchst du?</string>
+
+    <string name="AGB">Informationen zur Verarbeitung deiner Daten findest du in unserer Datenschutzerklärungen.</string>
+    <string name="Terms_of_Use">Es gelten unsere Nutzungsbedingungen.</string>
+
+    <string name="logout">Abmelden</string>
+
+    <string name="account">Profil</string>
+
+    <string name="noPlaylist">Du hast keine Playlist</string>
+    <string name="noSubs">Du hast keine Abos</string>
+
+    <string name="Language_preference">Nur deutschsprachigen Inhalt</string>
+    <string name="create">Erstellen</string>
+
+    <string name="cancel">Abbrechen</string>
+
+    <string name="Offline">Du bist Offline!</string>
+
+
+    <string name="FirstName">Vorname</string>
+    <string name="EMail">E-Mail</string>
+    <string name="RepeatPassword">Passwort wiederholen</string>
+    <string name="RegisterButton">Registrieren</string>
+    <string name="loginButton">Anmelden</string>
+    <string name="ForgotPassword">Passwort vergessen</string>
+    <string name="ResetPassword">Neues Passwort anfordern</string>
+    <string name="ExistingAccount">bestehendes Konto - Anmelden</string>
+    <string name="Password">Passwort</string>
+    <string name="legal_requirements">Gesetzliche Vorgaben</string>
+    <string name="downloadingMobile">Downloaden über Mobile Daten</string>
+    <string name="streamingMobile">Streamen über Mobile Daten</string>
+    <string name="enableNotification">Benachrichtungen erlauben</string>
+    <string name="impress">Impressum und AGB</string>
+
+    <string name="subscribeButton">Abonnieren</string>
+    <string name="playbutton">Abspielen</string>
+
+
+    <string name="tablayoutEpisode">Episoden</string>
+    <string name="tablayoutAboutThePodcast">Beschreibung</string>
+    <string name="tablayoutsimilarPodcats">Empfehlungen</string>
+
+
+    <string name="home">Startseite</string>
+    <string name="search">Suche</string>
+    <string name="library">Bibliothek</string>
+
+    <string name="popupmenuDownload">herunterladen</string>
+    <string name="popupmenuaddToPlaylist">In Playlist hinzufügen</string>
+    <string name="createPlaylistTextview">Neue Playlist erstellen</string>
+    <string name="createPlaylistButton">Playlist erstellen</string>
+    <string name="goodMorning">Guten Morgen,</string>
+    <string name="goodEvening">Guten Abend,</string>
+    <string name="goodDay">Guten Tag,</string>
+
+    <string name="Account">Account</string>
+    <string name="Feedback">Feedback</string>
+    <string name="sendFeedback">Feedback geben</string>
+    <string name="Report">Melde uns technische Probleme oder Vorschläge für Updates und Content.</string>
+    <string name="privacy">Datenschutzerklärung</string>
+
+
+
+
+</resources>

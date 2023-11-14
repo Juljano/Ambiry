@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:id="@+id/constraintRegister"
+    tools:context=".RegisterActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEmailAdress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:hint="@string/EMail"
+        android:maxLines="1"
+        android:textColorHint="#FFFFFF"
+        app:hintTextAppearance="@style/TextInputLayoutTextColor"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/emailicon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmailAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7DBADD"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:hint="@string/Password"
+        android:textColorHint="#FFFFFF"
+        app:endIconMode="password_toggle"
+        app:hintTextAppearance="@style/TextInputLayoutTextColor"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/passwordicon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7DBADD"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textviewTerms_of_Use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="436dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/Terms_of_Use"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewAGB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:text="@string/AGB"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="544dp"
+        android:backgroundTint="#7DBADD"
+        android:text="@string/RegisterButton"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewExistingAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ExistingAccount"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

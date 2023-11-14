@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuDownload"
+        android:icon="@drawable/downloadicon"
+        android:title="@string/popupmenuDownload"></item>
+
+    <item
+        android:id="@+id/menuaddToPlaylist"
+        android:icon="@drawable/playlistaddicon"
+        android:title="@string/popupmenuaddToPlaylist"></item>
+
+</menu>

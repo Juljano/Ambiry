@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubscriptionFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textviewChannel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="@string/followedChannel"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSubscriber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/addicon" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_Subscription"
+        android:layout_width="0dp"
+        android:layout_height="639dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <ImageView
+        android:id="@+id/imageView_empty"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/podcasticon"
+        app:layout_constraintBottom_toBottomOf="@+id/empty_view"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/noSubs"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

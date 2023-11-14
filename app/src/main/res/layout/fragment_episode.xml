@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#7DBADD"
+    app:cardUseCompatPadding="true"> <!-- Hält den Abstand zum nächsten Cardview-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/podcasticon"
+            app:civ_border_width="1dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Odesza - Der Podcast Tour durch Deutschland"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dotsicon"></ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/textviewDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="59 Minuten"
+            android:textColor="#ffffff"
+            android:textSize="11sp"></TextView>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

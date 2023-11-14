@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "693205784947",
+    "firebase_url": "https://ambiry-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ambiry",
+    "storage_bucket": "ambiry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693205784947:android:886cb93c01ffcbeb804d06",
+        "android_client_info": {
+          "package_name": "de.jukolai.ambiry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693205784947-g6o5pqchplp9he05ashmd0gqh7o5r56d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.jukolai.ambiry",
+            "certificate_hash": "53c43f4be70f231d46fa8d659f5310f2c84ec358"
+          }
+        },
+        {
+          "client_id": "693205784947-uj31tqdriq7m91o46plkgkui4cll9g8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIES3UhnD-uTkcXkkO37bHm7xlX6NqD_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693205784947-uj31tqdriq7m91o46plkgkui4cll9g8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

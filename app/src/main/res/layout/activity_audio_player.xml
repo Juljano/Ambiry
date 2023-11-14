@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2C3B"
+    tools:context=".AudioPlayerActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/arrowButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/arrowdownicon">
+
+        </ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/downloadbutton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/download_icon"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/castbutton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/casticon"></ImageButton>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textviewArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="QUARKS SCIENCE COPS"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="@id/textviewTitle" />
+
+
+    <ImageView
+        android:id="@+id/Imageview_cv"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/imageview_border"
+        android:scaleType="fitXY"
+        android:src="@drawable/download"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Die Akte Bachblüten:
+Ein Blumenstrauß voll Blödsinn"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toBottomOf="@id/Imageview_cv" />
+
+
+    <RelativeLayout
+        android:id="@+id/linearlayoutSeekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toBottomOf="@id/Imageview_cv">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/textviewremainingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textviewcurrentime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toBottomOf="@id/linearlayoutSeekbar">
+
+
+        <ImageButton
+            android:id="@+id/skippreviousbutton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/skippreviousbutton"></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/rewindButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:background="@drawable/replay_30_icon">
+
+        </ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/playicon">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="90dp"
+            android:background="@drawable/forward_30_icon">
+
+        </ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/skipnextbutton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/skipnextbutton">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft"
+        app:layout_constraintTop_toTopOf="@id/linearLayoutMenu" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineright"
+        app:layout_constraintStart_toEndOf="@id/guidelineleft">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <ImageButton
+            android:id="@+id/thumbupButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/thumbupicon">
+
+        </ImageButton>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/commentsButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/commenticon">
+
+        </ImageButton>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/share_icon">
+
+        </ImageButton>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:id="@+id/sleepButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/sleep_icon">
+
+        </ImageButton>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
